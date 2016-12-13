@@ -1,1 +1,3 @@
 # GitProject
+This is the readMe document!
+Here you can find help for project...
