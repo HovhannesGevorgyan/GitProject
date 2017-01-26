@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ԵՊՀ - Yerevan State University</title>
+<style>
+table { border : 2px solid black; border-collapse : collapse; width : 600px; }
+table tr td { border : 1px solid black; width : 150px; height: 40px; }
+table tr th { border : 1px solid black; width : 150px; height: 40px; }
+.gray { background-color : gray;}
+.header { background-color : green;}
+</style>
+<script type='text/javascript'>
+window.onload = init;
+ 
+function init() {
+createTable();
+}
+ 
+function createTable() {
+let body = document.getElementsByTagName("body");
+let table = document.createElement("table");
+table.setAttribute("id", "table");
+body[0].appendChild(table);
+fillTable();
+}
+ 
+function fillTable() {
+let tbl = document.getElementById("table");
+ 
+let row1 = document.createElement("tr");
+row1.className += "header";
+let cell1 = document.createElement("th");
+cell1.innerHTML =  "Id";
+row1.appendChild(cell1);
+let cell2 = document.createElement("th");
+cell2.innerHTML =  "Name";
+row1.appendChild(cell2);
+let cell3 = document.createElement("th");
+cell3.innerHTML =  "Email";
+row1.appendChild(cell3);
+let cell4 = document.createElement("th");
+cell4.innerHTML =  "Investments";
+row1.appendChild(cell4);
+tbl.appendChild(row1);
+ 
+let row2 = document.createElement("tr");
+let cell21 = document.createElement("th");
+cell21.innerHTML =  "231";
+row2.appendChild(cell21);
+let cell22 = document.createElement("th");
+cell22.innerHTML =  "Albert Master";
+row2.appendChild(cell22);
+let cell23 = document.createElement("th");
+cell23.innerHTML =  "albert.master@gmail.com";
+row2.appendChild(cell23);
+let cell24 = document.createElement("th");
+cell24.innerHTML =  "Bonds";
+row2.appendChild(cell24);
+tbl.appendChild(row2);
+ 
+let row3 = document.createElement("tr");
+row3.className += "gray";
+let cell31 = document.createElement("th");
+cell31.innerHTML =  "210";
+row3.appendChild(cell31);
+let cell32 = document.createElement("th");
+cell32.innerHTML =  "Alfred Alan";
+row3.appendChild(cell32);
+let cell33 = document.createElement("th");
+cell33.innerHTML =  "aalan@gmail.com";
+row3.appendChild(cell33);
+let cell34 = document.createElement("th");
+cell34.innerHTML =  "Stocks";
+row3.appendChild(cell34);
+tbl.appendChild(row3);
+ 
+let row4 = document.createElement("tr");
+let cell41 = document.createElement("th");
+cell41.innerHTML =  "256";
+row4.appendChild(cell41);
+let cell42 = document.createElement("th");
+cell42.innerHTML =  "Alison Smart";
+row4.appendChild(cell42);
+let cell43 = document.createElement("th");
+cell43.innerHTML =  "asmart@gmail.com";
+row4.appendChild(cell43);
+let cell44 = document.createElement("th");
+cell44.innerHTML =  "Residential";
+row4.appendChild(cell44);
+tbl.appendChild(row4);
+ 
+let row5 = document.createElement("tr");
+row5.className += "gray";
+let cell51 = document.createElement("th");
+cell51.innerHTML =  "236";
+row5.appendChild(cell51);
+let cell52 = document.createElement("th");
+cell52.innerHTML =  "Zinedine Zidane";
+row5.appendChild(cell52);
+let cell53 = document.createElement("th");
+cell53.innerHTML =  "zizu76@gmail.com";
+row5.appendChild(cell53);
+let cell54 = document.createElement("th");
+cell54.innerHTML =  "Legends";
+row5.appendChild(cell54);
+tbl.appendChild(row5);
+}
+</script>
+</head> 
+<body>
+</body>
+</html>
